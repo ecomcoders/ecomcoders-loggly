@@ -10,6 +10,15 @@
             "role": "Author"
         }
     ],
+    "homepage": "https://github.com/ecomcoders/ecomcoders-loggly",
     "type": "magento2-module",
-    "homepage": "https://github.com/ecomcoders/ecomcoders-loggly"
+    "require": {
+        "php": "~5.6.0|~7.0.0"
+    },
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "EcomCoders\\Loggly\\": ""
+        }
+    }
 }
