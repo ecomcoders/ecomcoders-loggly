@@ -1,0 +1,15 @@
+{
+    "name": "ecomcoders/loggly",
+    "description": "Loggly Syslog UDP Logger for Magento 2",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Christian Grugel",
+            "email": "dev@ecomcoders.com",
+            "homepage": "https://www.ecomcoders.com",
+            "role": "Author"
+        }
+    ],
+    "type": "magento2-module",
+    "homepage": "https://github.com/ecomcoders/ecomcoders-loggly"
+}
