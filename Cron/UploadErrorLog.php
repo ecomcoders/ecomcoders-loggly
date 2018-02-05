@@ -88,7 +88,7 @@ class UploadErrorLog
      */
     private function getErrorLogPath()
     {
-        return \ini_get('error_log');
+        return $this->scopeConfig->getValue('dev/ecomcoders_loggly/path_to_error_log');
     }
 
     /**

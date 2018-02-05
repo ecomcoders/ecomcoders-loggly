@@ -21,4 +21,11 @@ class SystemConfigTest extends \PHPUnit_Framework_TestCase
         $scopeConfig = ObjectManager::getInstance()->get(ScopeConfigInterface::class);
         $this->assertSame('your-app-identifier-here', $scopeConfig->getValue('dev/ecomcoders_loggly/app_name'));
     }
+
+    public function testPhpErrorLogFilePathCanBeConfigured()
+    {
+        /** @var XmlConfigReader $systemXmlConfigReader */
+        $systemXmlConfigReader = ObjectManager::getInstance()->create(XmlConfigReader::class);
+        $this->assertArrayHasKey('path_to_error_log', $systemXmlConfigReader->read('adminhtml')['config']['system']['sections']['dev']['children']['ecomcoders_loggly']['children']);
+    }
 }

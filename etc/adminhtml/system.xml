@@ -12,6 +12,9 @@
                <field id="loggly_token" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
                    <label>Loggly Token</label>
                </field>
+               <field id="path_to_error_log" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+                   <label>Absolute Path to PHP error log file</label>
+               </field>
            </group>
         </section>
     </system>
