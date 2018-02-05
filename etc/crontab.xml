@@ -3,7 +3,7 @@
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
     <group id="default">
         <job name="ecomcoders_loggly_upload_errorlog" instance="EcomCoders\Loggly\Cron\UploadErrorLog" method="execute">
-            <schedule>* * * * *</schedule>
+            <schedule>*/5 * * * *</schedule>
         </job>
     </group>
 </config>
