@@ -6,7 +6,7 @@ namespace EcomCoders\Loggly\Plugin;
 use Magento\TestFramework\Interception\PluginList;
 use Magento\TestFramework\ObjectManager;
 
-class ResponseHttpPluginTest extends \PHPUnit_Framework_TestCase
+class ResponseHttpPluginTest extends \PHPUnit\Framework\TestCase
 {
     public function testPluginIsDefined()
     {

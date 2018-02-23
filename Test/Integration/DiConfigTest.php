@@ -6,7 +6,7 @@ use Magento\Framework\ObjectManager\ConfigInterface as ObjectManagerConfig;
 use Magento\TestFramework\ObjectManager;
 use Monolog\Logger;
 
-class DiConfigTest extends \PHPUnit_Framework_TestCase
+class DiConfigTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * GetDiConfig

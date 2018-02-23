@@ -6,7 +6,7 @@ use Magento\Config\Model\Config\Structure\Reader as XmlConfigReader;
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\TestFramework\ObjectManager;
 
-class SystemConfigTest extends \PHPUnit_Framework_TestCase
+class SystemConfigTest extends \PHPUnit\Framework\TestCase
 {
     public function testConfigSectionAndGroupIsDefined()
     {

@@ -5,7 +5,7 @@ namespace EcomCoders\Loggly;
 use Magento\Cron\Model\ConfigInterface;
 use Magento\TestFramework\ObjectManager;
 
-class CronTabConfigTest extends \PHPUnit_Framework_TestCase
+class CronTabConfigTest extends \PHPUnit\Framework\TestCase
 {
     public function testCronTabJobIsDefined()
     {
