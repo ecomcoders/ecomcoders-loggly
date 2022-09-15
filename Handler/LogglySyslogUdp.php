@@ -44,7 +44,7 @@ class LogglySyslogUdp extends SyslogUdpHandler
      * @param int $severity
      * @return string
      */
-    protected function makeCommonSyslogHeader($severity)
+    protected function makeCommonSyslogHeader($severity, $datetime)
     {
         $priority       = $severity + $this->facility;
         $appname        = $this->scopeConfig->getValue('dev/ecomcoders_loggly/app_name');
