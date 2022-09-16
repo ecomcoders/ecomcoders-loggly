@@ -1,11 +1,10 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace EcomCoders\Loggly\Handler;
 
+use DateTimeInterface;
 use Magento\Framework\App\Config\ScopeConfigInterface;
-use Magento\Framework\Stdlib\DateTime\TimezoneInterface;
 use Monolog\Handler\SyslogUdpHandler;
-use Monolog\Logger;
 
 class LogglySyslogUdp extends SyslogUdpHandler
 {
@@ -44,7 +43,7 @@ class LogglySyslogUdp extends SyslogUdpHandler
      * @param int $severity
      * @return string
      */
-    protected function makeCommonSyslogHeader($severity, $datetime)
+    protected function makeCommonSyslogHeader(int $severity, DateTimeInterface $datetime): string
     {
         $priority       = $severity + $this->facility;
         $appname        = $this->scopeConfig->getValue('dev/ecomcoders_loggly/app_name');
